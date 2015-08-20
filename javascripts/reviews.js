@@ -9,7 +9,7 @@ define(function(require) {
     $(".review-container").toggleClass("hidden");
   });
   $("#save-review").click(function(){
-    var tripRef = new Firebase('https://caitlin-trippin.firebaseio.com/trips' + selectedTripId);
+    var tripRef = new Firebase('https://caitlin-trippin.firebaseio.com/trips/' + selectedTripId);
     
     var newReview = {
       date: Date.now(),

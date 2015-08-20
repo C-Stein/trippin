@@ -18,8 +18,8 @@ requirejs.config({
 
     
 requirejs(
-  ["dependencies", "load-data", "save-data", "get-location", "reviews"],
-  function(dependencies, loadData, saveData, getLocation, reviews) {
+  ["dependencies", "load-data", "save-data", "get-location", "reviews", "filterLocations"],
+  function(dependencies, loadData, saveData, getLocation, reviews, filter) {
     
    
   });
