@@ -18,14 +18,26 @@
   <h2>The Trips</h2>
   <div id="list-of-trips" class="container">
   </div>
-  <form action="sing.html" method="POST">
-    <label for="locationName">Location Name:</label>
-    <input type="text" name="locationName" id="locationName">
+  <div class="review-container hidden form-group">
+    <h2>Review your trip</h2>
+    <label for="tripTitle">Trip title:</label>
+    <input type="text" name="tripTitle" id="tripTitle" class="form control">
     <br>
-    <label for="locationType">Location Type:</label>
-    <select id="locationTypes">
-      
-    </select>
+    <label for="review">Review:</label>
+    <textarea class="review-entry form-control" name="review"></textarea>
+    <button id="save-review">Save Review</button>
+  </div>
+  <form action="sing.html" method="POST">
+    <h2>Add Location</h2>
+    <div class="form-group">
+      <label for="locationName">Location Name:</label>
+      <input type="text" name="locationName" id="locationName" class="form-control">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="locationType">Location Type:</label>
+      <select id="locationTypes" class="form-control"></select>
+    </div>
     <br>
     <!-- <label for="review">Review:</label>
     <input type="textarea" name="review" id="review">
@@ -40,10 +52,6 @@
     <input type="button" value="Add Location" id="addLocation" class="subBtn">
   </form>
 
-  <div class="review-container hidden">
-    <textarea class="review-entry "></textarea>
-    <button id="save-review">Save Review</button>
-  </div>
 
   <script data-main="javascripts/main" src="lib/bower_components/requirejs/require.js"></script>
     
