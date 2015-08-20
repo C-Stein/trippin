@@ -4,20 +4,21 @@ define(function(require){
 
   $("#visited").click(function(){
     visited = true;
-  })
+  });
 
   $("#wishList").click(function(){
     visited = false;
-  })
+  });
 
 
   $("#addLocation").click(function(){
 
+
     var newLocation = {
-      location: $("#locationName"),
-      location_type: $("#locationType"),
+      location: $("#locationName").val(),
+      location_type: $("#locationType").val(),
       visited: visited,
-    }
+    };
 
     console.log("newLocation", newLocation);
 
@@ -27,12 +28,15 @@ define(function(require){
       data: JSON.stringify(newLocation)
     })
     .done(function(newData){
-      console.log("ajax success", newData)
+      console.log("ajax success", newData);
     })
     .fail(function(xhr, status, error){
-      console.log("ajaax error", error)
+      console.log("ajax error", error);
     });
-  })
+    $("#locationName").val("");
+    $("#locationType").val("");
+    $("#review").val("");
+  });
 
 
 
