@@ -10,7 +10,6 @@ define(function(require){
       location_types = snapshot.val();
       console.log("location_types", location_types);
     var populatedLocTemplate = templates.locTypeTpl(location_types);
-      console.log("populatedLocTemplate", populatedLocTemplate);
     $("#locationTypes").html(populatedLocTemplate);
     });
 

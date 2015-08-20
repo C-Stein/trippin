@@ -16,7 +16,7 @@ define(function(require){
 
     var newLocation = {
       location: $("#locationName").val(),
-      location_type: $("#locationType").val(),
+      location_type: $("#locationTypes").val(),
       visited: visited,
     };
 
@@ -34,7 +34,7 @@ define(function(require){
       console.log("ajax error", error);
     });
     $("#locationName").val("");
-    $("#locationType").val("");
+    $("#locationTypes").val("");
     $("#review").val("");
   });
 
