@@ -2,4 +2,10 @@ body {
   padding: 15px;
   background-color: #ccc; }
 
+.destination {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px; }
+
 /*# sourceMappingURL=main.css.map */

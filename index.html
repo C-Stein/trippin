@@ -9,26 +9,28 @@
 </head>
 
 <body>
-  <h1>Trips!</h1>
+  <h1>Caitlin's Travel Tracker</h1>
   <div class="btn-group" role="group" aria-label="...">
       <button type="button" class="btn btn-default" id="seeVisited">See Places I've Visited</button>
       <button type="button" class="btn btn-default" id="seeWishList">See Places I Want to Go</button>
-    </div>
-  <div id="list-of-trips">
+      <button type="button" class="btn btn-default" id="seeAll">See Them All</button>
+  </div>
+  <h2>The Trips</h2>
+  <div id="list-of-trips" class="container">
   </div>
   <form action="sing.html" method="POST">
     <label for="locationName">Location Name:</label>
-    <input type="textarea" name="locationName" id="locationName">
+    <input type="text" name="locationName" id="locationName">
     <br>
     <label for="locationType">Location Type:</label>
     <select id="locationTypes">
       
     </select>
     <br>
-    <label for="review">Review:</label>
+    <!-- <label for="review">Review:</label>
     <input type="textarea" name="review" id="review">
 
-    <br>
+    <br> -->
     </div>
     <div class="btn-group" role="group" aria-label="...">
       <button type="button" class="btn btn-default" id="visited">Visited</button>

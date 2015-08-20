@@ -26,7 +26,11 @@ define(function(require){
     $("#seeWishList").click(function(){
       $("#list-of-trips").html(templates.tripTpl(wishlistPlaces));  
     });
-    
+
+    $("#seeAll").click(function(){
+      $("#list-of-trips").html(templates.tripTpl(trips));  
+    });
+
   });
 
 

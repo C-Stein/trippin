@@ -15,7 +15,7 @@ define(function(require) {
       date: Date.now(),
       text: $(".review-entry").val(),
       title: "title"
-    }
+    };
 
 
     tripRef.child("reviews").push(newReview);
@@ -23,5 +23,5 @@ define(function(require) {
     console.log("newReview", newReview);
     $(".review-entry").val("");
 
-  })
+  });
 });
